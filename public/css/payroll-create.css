@@ -1,0 +1,80 @@
+#payroll-generate-list{
+
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin:auto;
+
+}
+
+#payroll-generate-list th, #payroll-generate-list td{
+    margin: 0;
+    white-space: nowrap;
+    border-top-width: 0px;
+
+	/* padding:5px 10px; */
+
+    border:1px solid #000;
+ 	white-space:nowrap;
+	vertical-align:top;
+}
+
+.salary-calculator-container.card-body{
+    width: 90vw !important;
+    overflow-x: scroll !important;
+}
+
+    
+.salary-calculator-container.card-body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
+
+}
+        
+.salary-calculator-container.card-body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-image: url("https://i.ibb.co/q95CBdZ/train.png");
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+}
+
+
+
+.amount_input_field{
+    min-width: 180px !important;
+}
+
+td.hours_input_field{
+    min-width: 50px !important;
+}
+
+
+th.emp_payroll_name {
+    background: #212529;
+    color: white;
+}
+
+.emp_payroll_name{
+
+    position: sticky !important;  
+
+    width: 5em;
+    left: 0;
+    top: auto;
+    border-top-width: 1px;
+
+    margin-top: -1px;
+
+    z-index: 1 !important;
+
+    top: 0 !important; 
+
+    left: -20px !important;
+
+
+}
+
+.deductions-amount-label{
+    color: red !important;
+}

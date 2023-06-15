@@ -1,0 +1,60 @@
+ 
+
+label.form-label {
+    font-weight: 700;
+}
+/* 
+.modal-content {
+    background-color: #071450 !important;
+    color: white  !important;
+
+} */
+
+/* 
+.modal-content form label{
+    color: white  !important;
+}
+
+.modal-content form  h1, 
+.modal-content form  h2, 
+.modal-content form  h3, 
+.modal-content form  h4 , 
+.modal-content form h5, 
+.modal-content form  h6 {
+    color: white  !important;
+} */
+
+@media (min-width: 992px){
+        
+    .modal-lg {
+        max-width: 1200px;
+    }
+
+    #payroll-headers_wrapper, #payroll-headers{
+        width: 100% !important;
+    }
+}
+ 
+tr.schedule_active {
+    background-color: #b9d2ff !important;
+}
+
+#loader-spinner {
+    display: none;
+    z-index: 99999 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+
+}
+
+#loader-spinner img{
+    width: 300px;
+    height: 300px;
+}
+.user-area{
+    border: 2px solid #272c33;
+    border-radius: 21px;
+}
