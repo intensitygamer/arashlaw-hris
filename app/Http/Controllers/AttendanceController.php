@@ -263,6 +263,8 @@ class AttendanceController extends Controller{
         $employees_retrieved = array();
         
         $i = 0;
+        
+        $employeeData = array();
 
         foreach($employees as $employee){
 

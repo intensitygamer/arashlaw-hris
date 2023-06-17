@@ -106,10 +106,15 @@
             
 
             // Salary Info 
+            let total_reg_hours_worked = (salary_info.total_regular_hours_worked) ?? 0;
+            let total_nd_hours = (salary_info.nd_hours) ?? 0;
+            total_hours_worked = (salary_info.total_hours_worked) ?? 0;
+
+
+            jQuery("#edit_total_regular_hours_worked").val(total_reg_hours_worked);
+            jQuery("#edit_nd_hours").val(total_nd_hours);
             
-            jQuery("#edit_total_regular_hours_worked").val(salary_info.total_hours_worked - salary_info.nd_hours);
-            jQuery("#edit_nd_hours").val(salary_info.nd_hours);
-            jQuery("#edit_total_hours_worked").val(salary_info.total_hours_worked);
+            //jQuery("#edit_total_hours_worked").val(total_hours_worked);
 
 
             // Earnings 

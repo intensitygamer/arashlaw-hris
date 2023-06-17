@@ -21,4 +21,32 @@ class DepartmentsController extends Controller
 
     }
 
+    public function store(Request $request){
+
+ 
+        $department    = new Departments;
+
+        $department->department_name         = $request->department_name; 
+        $department->department_desc         = $request->department_desc; 
+        $department->parent_department_id    = $request->parent_department_id; 
+        $department->department_head_id      = $request->department_head_id; 
+  
+        $department->save();
+        
+        // redirect()->route('departments');
+
+        if($department){
+
+            return response(array('message' => "Department Sucessfully Added!"), 200)
+                                ->header('Content-Type', 'application/json');        
+
+        }
+
+        return response(array('message' => "Department Failed Updating, Please Try Again!"), 400)
+                          ->header('Content-Type', 'application/json');
+
+
+
+    }
+
 }

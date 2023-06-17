@@ -76,9 +76,9 @@
 
                                 <div class="form-group">
 
-                                    <label for="nd_hours" class="form-label" > Night Differential Hours </label>
+                                    <label for="edit_nd_hours" class="form-label" > Night Differential Hours </label>
                                         
-                                    <input type="text" name="nd_hours" id= "edit_nd_hours" class="form-control input-s"  /> 
+                                    <input type="text" name="nd_hours_worked" id= "edit_nd_hours" class="form-control input-s"  /> 
             
                                 </div> 
 

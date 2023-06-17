@@ -116,7 +116,7 @@ Route::middleware('auth')->group(function(){
         
         Route::get('/', [DepartmentsController::class, 'index'])->name('departments');
         
-        //Route::get('/add', [AttendanceController::class, 'store'])->name('add');
+        Route::post('/add', [DepartmentsController::class, 'store'])->name('departments.add');
     
     });
 
@@ -134,7 +134,7 @@ Route::middleware('auth')->group(function(){
         
         Route::get('/', [JobPositionsController::class, 'index'])->name('job_positions');
         
-        //Route::get('/add', [AttendanceController::class, 'store'])->name('add');
+        Route::post('/add', [JobPositionsController::class, 'store'])->name('add.job_positions');
     
     });
 

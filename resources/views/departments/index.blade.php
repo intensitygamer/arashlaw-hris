@@ -32,24 +32,24 @@
 
                                 @foreach($departments as $department)
 
-                                <tr>
-                                    <td> {{ $department->department_name }} </td>
-                                    <td> {{ $department->department_head_id }} </td>
-                                    <td> {{ $department->parent_department_id }} </td>
-                                    <td> {{ $department->department_desc }} </td>
-                                       
+                                    <tr>
+                                        <td> {{ $department->department_name }} </td>
+                                        <td> {{ $department->department_head_id }} </td>
+                                        <td> {{ $department->parent_department_id }} </td>
+                                        <td> {{ $department->department_desc }} </td>
+                                        
 
-                                    <td>
-                                        <a href="#" class="btn btn-success mb-2" data-toggle="modal" data-target="#editEmployeesModal"> <i class="menu-icon fa fa-edit"></i></a>  
-                                        <a href="#" class="btn btn-info mb-2" data-toggle="modal" data-target="#editEmployeesModal"> <i class="menu-icon fa fa-eye"></i></a>  
-                                        <a href="#" class="btn btn-danger mb-2" data-toggle="modal" data-target="#delEmployeesModal"> <i class="menu-icon fa fa-trash"></i></a> 
+                                        <td>
+                                            <a href="#" class="btn btn-success mb-2" data-toggle="modal" data-target="#editDepartmentsModal"> <i class="menu-icon fa fa-edit"></i></a>  
+                                            <a href="#" class="btn btn-info mb-2" data-toggle="modal" data-target="#viewDepartmentsModal"> <i class="menu-icon fa fa-eye"></i></a>  
+                                            <a href="#" class="btn btn-danger mb-2" data-toggle="modal" data-target="#delDepartmentsModal"> <i class="menu-icon fa fa-trash"></i></a> 
 
-                                    </td>
+                                        </td>
 
 
-                                </tr>
+                                    </tr>
                             
-                            @endforeach 
+                                @endforeach 
 
                   
                             </tbody>
@@ -65,5 +65,6 @@
 </div>
 
 @include('departments.modals.add')
+@include('departments.modals.edit')
 
 @endsection

@@ -1,7 +1,7 @@
 
-<!-- Add New Departments -->
+<!-- Edit New Departments -->
 
-<div class="modal fade " id='addDepartmentsModal' tabindex="-1">
+<div class="modal fade " id='editDepartmentsModal' tabindex="-1">
 
     <div class="modal-dialog modal-lg">
 
@@ -10,7 +10,7 @@
         <form action="{{ route('departments.add') }}" method="POST" id="save_departments_form">
             
             @csrf
- 
+
             <div class="modal-body">
 
                 <div class="row">
@@ -48,8 +48,6 @@
                     
                 </div>
  
-
-
             </div>
     
 

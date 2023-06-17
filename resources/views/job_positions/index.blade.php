@@ -27,44 +27,24 @@
                                     <th scope="col">Actions </th>
                                 </tr>
                             </thead>
+
                             <tbody>
-                                <tr>
-                                    <td>Web Developer</td>
-                                    <td></td>
-                                    <td></td>
-
-                                    <td>
-                                        <a href="#" class="btn btn-success mb-2" data-toggle="modal" data-target="#editEmployeesModal"> <i class="menu-icon fa fa-edit"></i></a>  
-                                        <a href="#" class="btn btn-danger mb-2" data-toggle="modal" data-target="#delEmployeesModal"> <i class="menu-icon fa fa-trash"></i></a> 
-                                   
-                                    </td>
                               
-                                </tr>
+                            @foreach($job_positions as $job_position)
 
                                 <tr>
-                                    <td>SEO</td>
-                                    <td></td>
-                                    <td></td>
+                                    <td> {{ $job_position->job_title }} </td>
+                                    <td> {{ $job_position->job_description }} </td>
+                                    <td> {{ $job_position->department_id }} </td>
 
-                                    <td>
-                                        <a href="#" class="btn btn-success mb-2" data-toggle="modal" data-target="#editEmployeesModal"> <i class="menu-icon fa fa-edit"></i></a>  
-                                        <a href="#" class="btn btn-danger mb-2" data-toggle="modal" data-target="#delEmployeesModal"> <i class="menu-icon fa fa-trash"></i></a> 
-                                   
-                                    </td>
+                                        <td>
+                                            <a href="#" class="btn btn-success mb-2" data-toggle="modal" data-target="#editJobPositionModal"> <i class="menu-icon fa fa-edit"></i></a>  
+                                            <a href="#" class="btn btn-danger mb-2"  data-toggle="modal" data-target="#delJobPositionModal"> <i class="menu-icon fa fa-trash"></i></a>    
+                                        </td>
                                 </tr>
-                  
-                                <tr>
-                                    <td>Graphics</td>
-                                    <td></td>
-                                    <td></td>
 
-                                    <td>
-                                        <a href="#" class="btn btn-success mb-2" data-toggle="modal" data-target="#editEmployeesModal"> <i class="menu-icon fa fa-edit"></i></a>  
-                                        <a href="#" class="btn btn-danger mb-2" data-toggle="modal" data-target="#delEmployeesModal"> <i class="menu-icon fa fa-trash"></i></a> 
-                                   
-                                    </td>
-                                </tr>
-                  
+                            @endforeach
+
                             </tbody>
 
                         </table>
@@ -72,6 +52,18 @@
 
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </div>
     </div>

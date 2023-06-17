@@ -1,13 +1,13 @@
 
-<!-- Add New Job Position -->
+<!-- Edit New Job Position -->
 
-<div class="modal fade " id='addJobPositionModal' tabindex="-1">
+<div class="modal fade " id='editJobPositionModal' tabindex="-1">
 
     <div class="modal-dialog modal-lg">
 
       <div class="modal-content">
 
-        <form action="{{ route('add.job_positions') }}" method="POST" id='save_job_position_form'>
+        <form action="{{ route('edit.job_positions') }}" method="POST" id='save_job_position_form'>
             
             @csrf
             
@@ -28,7 +28,7 @@
                         <div class="card">
                             
                             <div class="card-header">
-                                <h4>Add Job Position</h4>
+                                <h4> Update Job Position</h4>
                             </div>
 
                         <div class="card-body">

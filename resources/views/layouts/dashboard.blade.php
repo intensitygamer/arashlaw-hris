@@ -58,7 +58,9 @@
             $routes['schedule']     = array('schedule.agent_plotting', 'agent.plotting', 'schedule.supervisor_plotting', 'schedule.my_schedule');
     
             $routes['attendance']   = array('attendance.employee', 'attendance.edit', 'attendance');
-    
+            
+            $routes['departments']   = array('departments', 'departments.add');
+            
             $routes['dashboard']    = array('dashboard', 'attendance.employee_monitoring');
     
             $routes['employees']    = array('employees', 'employees.add');
@@ -349,6 +351,12 @@
         @if(routes_compare_list($routes['schedule']))  
 
             <script type="text/javascript" src="{{ asset('js/schedule.js') }}"></script> 
+
+        @endif
+
+        @if(routes_compare_list($routes['departments']))  
+
+            <script type="text/javascript" src="{{ asset('js/departments.js') }}"></script> 
 
         @endif
 

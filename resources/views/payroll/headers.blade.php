@@ -84,6 +84,5 @@
     </div>
 </div>
 
-@include('payroll.modals.create_headers')
 
 @endsection

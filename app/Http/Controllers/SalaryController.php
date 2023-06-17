@@ -72,6 +72,8 @@ class SalaryController extends Controller
     public function edit(Salary $salary)
     {
         //
+
+        
     }
 
     /**
@@ -135,4 +137,6 @@ class SalaryController extends Controller
                     ->header('Content-Type', 'application/json');
                     
     }
+
+
 }
