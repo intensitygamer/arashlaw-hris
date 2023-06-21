@@ -17,7 +17,7 @@ return new class extends Migration
             
             $table->string('last_attendance_log')->nullable();
             $table->timestamp('last_log_attendance_at')->nullable();
-            $table->unsignedInteger('user_id')->nullable();;
+            $table->unsignedInteger('user_id')->nullable();
 
         });
         

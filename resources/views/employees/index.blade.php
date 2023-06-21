@@ -64,9 +64,9 @@
                                         <td> {{ $employee->company_email }} </td>
                             
                                         <td>
-                                            <a href="#" class="btn btn-success mb-2" data-toggle="modal" data-target="#editEmployeesModal"> <i class="menu-icon fa fa-edit"></i></a>  
-                                            <a href="#" class="btn btn-info mb-2"   data-toggle="modal" data-target="#viewEmployeesModal"> <i class="menu-icon fa fa-eye"></i></a>  
-                                            <a href="#" class="btn btn-danger mb-2" data-toggle="modal" data-target="#terminateEmployeesModal"> <i class="menu-icon fa fa-trash"></i></a> 
+                                            <a href="#" class="btn btn-success mb-2" data-toggle="modal" data-bs-empId="{{ $employee->id }}" data-target="#editEmployeesModal"> <i class="menu-icon fa fa-edit"></i></a>  
+                                            <a href="#" class="btn btn-info mb-2" data-bs-empId="{{ $employee->id }}" data-toggle="modal" data-target="#viewEmployeesModal"> <i class="menu-icon fa fa-eye"></i></a>  
+                                            <a href="#" class="btn btn-danger mb-2" data-bs-empId="{{ $employee->id }}" data-toggle="modal" data-target="#terminateEmployeesModal"> <i class="menu-icon fa fa-trash"></i></a> 
                                             <a href="{{ route('attendance.employee') }}" class="btn btn-primary mb-2" > <i class="menu-icon fa fa-clock-o"></i></a> 
                                             
                                                 <!-- Display Add Use Modal if Employee doesnt have a user account yet -->

@@ -27,7 +27,8 @@ return new class extends Migration
             $table->boolean('friday')->default(false);
             $table->boolean('saturday')->default(false);
             $table->boolean('sunday')->default(false);
- 
+            
+            $table->unsignedInteger('created_by_id')->nullable();
 
             $table->char('record_status', 1)->default('1');
 

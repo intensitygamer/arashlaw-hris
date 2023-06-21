@@ -13,7 +13,7 @@
  
 
             <div class="modal-header ">
-                <h4 class="modal-title text-center">Add New Employee</h4>
+                <h4 class="modal-title text-center">Edit Employee Info</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>

@@ -36,14 +36,35 @@
         
     jQuery("#addUserModal").on('show.bs.modal', function(e){
  
-        const button = e.relatedTarget
+        let button = e.relatedTarget
         // Extract info from data-bs-* attributes
-        const empId = button.getAttribute('data-bs-empId');
+        let empId = button.getAttribute('data-bs-empId');
 
         jQuery("#user_add_employee_id").val(empId);
       
     });
+
+    jQuery("#editEmployeesModal").on('show.bs.modal', function(e){
+
+        let button = e.relatedTarget
+
+        let empId = button.getAttribute('data-bs-empId');
+
+
+
+        jQuery.get( employee_info_retrieve_url, { emp_id: emp_id },  function( data ) {
+
+            console.log(data);
+            alert(data);
+            
+        });
+
+
+       // alert(empId);
+
+    });
     
+
     jQuery("#save_add_user_form").on('submit', function(e){
 
         let token = jQuery("input[name='_token']").val();
